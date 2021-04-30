@@ -1,6 +1,6 @@
 //String escape from "", '' marks
 //var str="My name is"Mark" , thank you";//Gives error
-var str="My name is \"Mark\" , thank you";//1st Meth
+var str="My name is \"Mark\" , thank you";//1st Method
 console.log(str);
 var str='My name is \"Mark\" , thank you';//2nd Method
 console.log(str);
