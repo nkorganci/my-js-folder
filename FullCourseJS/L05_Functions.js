@@ -108,6 +108,24 @@ function assignToReturn(num) {
 var b= assignToReturn(3);
 console.log(b);
 
-/* --------------Stand in Line,  queue  ---------------*/
+/* --------------Stand in Line,  queue, JSON.stringify() ---------------*/
 //New items can be added at the back of the queue and old items are taken off from the front of the queue.
+//The JSON.stringify() method converts a JavaScript object or value to a JSON string, 
 
+function q(arr, item) {
+    arr.push(item);
+    return arr.shift();
+}
+
+var testArr = [1, 2, 3];
+console.log("Before: " + JSON.stringify(testArr));
+console.log(q(testArr, 6));
+console.log("After: " + JSON.stringify(testArr))
+
+//Boolean values
+function b() {
+    return true;
+}
+console.log(b());
+
+//TIME 1:10
