@@ -128,4 +128,3 @@ function b() {
 }
 console.log(b());
 
-//TIME 1:10
