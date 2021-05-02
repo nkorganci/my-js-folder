@@ -88,3 +88,36 @@ console.log(lessThan(66));
 
 //--> Logical And/Or Operator
 
+
+
+
+//--> Returning Boolean Values from Functions
+
+//If else can be shortened
+function isEqualIf(a,){
+    
+    if(a===b){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+
+//=== strict equality
+function isEqual(a,b){
+    return a===b;//strict equality
+}
+
+
+console.log(isEqual(2,2));//True
+console.log(isEqual(2,"2"));//false, values and typs must be same.
+console.log(isEqual(2,10));
+
+//== equality
+function isEqual(a,b){
+    return a==b;
+}
+
+console.log(isEqual(2,2));//true
+console.log(isEqual(2,"2"));//true
