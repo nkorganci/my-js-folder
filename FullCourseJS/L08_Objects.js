@@ -75,5 +75,118 @@ function phoneticlookup(val){
         bottom:"shoes"
     }
     myObj.hasOwnProperty("top")
+
+    //-->Manipulating Complex Objects
+
+var myMusic=[
+    {//object in an array
+    "artist":"Billy Joel",
+    "title":"Piano Man",
+    "Release_year": 1973,
+    "formats":["CD", "8t","LP"],
+    "gold": true 
+        
+    },//After each object add comma
+    //Add record here
     
-    1 59
+    {//second object in array
+      
+    "artist":"beau",
+    "title":"Cereal Man",
+    "Release_year": 19,
+    "formats":["Youtube video"],
+    "gold": true   
+        
+    }
+]
+    
+//--> Accessing Nested Objects
+
+var myStorage={
+    "car": {
+        "inside":{
+            "glove box":"maps", "passenger seat":"crumbs" 
+        }
+     },
+    "outside":{
+        "trunk":"jack"
+        }
+};
+
+var gloveBoxContents=myStorage.car.inside["passenger seat"];
+console.log(gloveBoxContents);
+
+
+//--> Accessing Nested Arrays
+//Objects can contain both nested objects and nested arrays.
+
+var ourPets=[
+    {
+        animalType:"cat",
+        names:[
+            "meowzer",
+            "fluffy",
+            "Kit-Cat"
+        ]
+    },//End of the 1st object in array
+    
+    {
+        animalType:"dog",
+        names:[
+            "Spot",
+            "Browser",
+            "Frankie"
+        ]
+    }//End of the 2nd opbjec.
+
+];
+
+var animalT= ourPets[0].names[1];
+var animalT2= ourPets[1].names[0];
+
+console.log(animalT);
+console.log(animalT2);
+
+
+
+//--> Record Collection
+// Setup
+var collection = {
+    2548: {
+      albumTitle: 'Slippery When Wet',
+      artist: 'Bon Jovi',
+      tracks: ['Let It Rock', 'You Give Love a Bad Name']
+    },
+    2468: {
+      albumTitle: '1999',
+      artist: 'Prince',
+      tracks: ['1999', 'Little Red Corvette']
+    },
+    1245: {
+      artist: 'Robert Palmer',
+      tracks: []
+    },
+    5439: {
+      albumTitle: 'ABBA Gold'
+    }
+  };
+  
+  //Keep a copy of the collction for tests
+  var collectionCopy=JSON.parse(JSON.stringify(collection))//copy of the object
+  
+  // Only change code below this line
+  function updateRecords(id, prop, value) {
+    if(value===""){
+        delete collection[id][prop];
+    }else if(prop==="tracks"){
+        collection[id][prop]=collection[id][prop] || [];
+        collection[id][prop].push(value);
+    }else{
+        collection[id][prop]=value;
+    }
+    return collection;
+  }
+  
+  //Alter values blow to test your code
+  updateRecords(2468, "tracks", "test");
+  console.log(updateRecords(5439, 'artist', 'ABBA'));

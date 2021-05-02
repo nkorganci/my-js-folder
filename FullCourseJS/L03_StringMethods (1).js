@@ -25,6 +25,7 @@ console.log(name);
 name = "Badam" // But you can assign whole word
 console.log(name);
 
+
 //--->String with Function
 
 function wordBlanks(myAge, myName, MyCountry) {

@@ -18,7 +18,7 @@ var volume = 20;
 1-undefined, 2-null, 3-boolean, 4-String, 5-symbol, 6-number, 7-object
 */
 
-//var: can be used through all the programs
+//var: can be used through all the programs , it is global
 var myName = "jhos";
 myName = "Mar";
 myName = 3;

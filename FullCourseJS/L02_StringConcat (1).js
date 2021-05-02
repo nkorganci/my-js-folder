@@ -1,10 +1,12 @@
 //String escape from "", '' marks
 //var str="My name is"Mark" , thank you";//Gives error
-var str="My name is \"Mark\" , thank you";//1st Method
+var str="My name is \"Mark\" , thank you";//My name is "Mark" , thank you
 console.log(str);
-var str='My name is \"Mark\" , thank you';//2nd Method
+var str='My name is \"Mark\" , thank you';//My name is "Mark" , thank you
 console.log(str);
-var str=`'My name is \"Mark\" , thank you'`;//3rd Method
+var str=`My name is \"Mark\" , thank you`; // My name is "Mark" , thank you
+console.log(str);
+var str=`'My name is \"Mark\" , thank you'`;//'My name is "Mark" , thank you'
 console.log(str);
 
 //Escape Sequences in Strings, Regular Expressions
