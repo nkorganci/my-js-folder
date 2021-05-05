@@ -47,3 +47,20 @@ console.log(person);
 }
 */
 //. notation is more common and usefull
+
+var person={
+  fName:'John',
+  lName:'Cash',
+  age: 30
+};
+
+console.log(person);
+console.log(person.fName);//John
+
+console.log(person.country);//undefined, there is no such property
+
+//Adding a new property using .notation
+person.country='USA';
+console.log(person.country);
+person['ageLimit']=16;
+console.log(person);
