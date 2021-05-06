@@ -130,4 +130,6 @@ const user1={
 
 const {john:{age,email}}=user1;
 const { john: { age: userAge, email: userEmail }} = user1;
-//3
+
+
+//--> Destructuring Assignment to Assign Variables from Arrays
