@@ -53,15 +53,14 @@ console.log(greeting)//Hello may name is Adam and my age is 32
 
 
 //--> write concise object literal declarations using simple fields
-const createPerson=(name, age, gender)=>({name, age,gender});
-    
-    
+
     //This can be shortened 
     // return {
     //     name: name,
     //     age: age,
     //     gender:gender
-    
+const createPerson=(name, age, gender)=>({name, age,gender});
+      
 
 console.log(createPerson ("Zodiac Hasbro", 56, "male"));//{name: "Zodiac Hasbro", age: 56, gender: "male"}
 
@@ -91,8 +90,7 @@ const bicycle = {
     this.gear = newGear;
   }
 };
-// Only change code above this line
+// Only change code above this line, 
 bicycle.setGear(3);
 console.log(bicycle.gear);
 
-//--> Use class Syntax to Define a Constructor Function  3 12 56 2
