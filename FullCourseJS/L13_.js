@@ -95,4 +95,4 @@ const bicycle = {
 bicycle.setGear(3);
 console.log(bicycle.gear);
 
-//--> Use class Syntax to Define a Constructor Function  3 12 56
+//--> Use class Syntax to Define a Constructor Function  3 12 56 2
