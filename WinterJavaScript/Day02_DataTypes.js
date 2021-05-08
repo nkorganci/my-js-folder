@@ -22,15 +22,16 @@ Javascript has no int, double, float...
 
 */
 
+//Number
 var num= 30.9;
 console.log(num);
 console.log(typeof(num));
 
-var num1 = 30/0;
+var num1 = 30/0;//infinity
 console.log(num1);
-console.log(typeof(num1));
+console.log(typeof(num1));//number
 
-var num2=30+"a";
+var num2=30+"a";//30a
 console.log(num2);
 console.log(typeof(num2));
 

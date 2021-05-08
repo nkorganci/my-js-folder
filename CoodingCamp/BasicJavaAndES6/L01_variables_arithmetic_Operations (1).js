@@ -4,14 +4,13 @@
 var name = "Mark"; // in-line comment
 
 /*
-multi
-line
+multi line
 comment*/
 
 var volume = 20;
 
 
-// ===============DATA TYPES AND VARIABLES===================
+// ===============DATA TYPES AND VARIABLES   --VAR   LET   CONT -- ===================
 
 /*
             There are 7 data types in javascript
@@ -29,7 +28,7 @@ console.log(myName)
 //let: can be used in the scope where you declare that.
 let number1 = 4;
 console.log(number1);
-//let number1=6; // You can declare just one time has already been declared
+//let number1=6; // You can declare just one time, has already been declared
 number1 = 6;
 console.log(number1);// But you can reassign 
 
@@ -53,13 +52,15 @@ console.log(b);
 
 var b = 3;//I can declare and assign again, no problem.
 console.log(b);
-a = 4;// assigned, no need to declare.
 a = b;
 
 //Variable names and function names are case sensitive
 var fData = 2;
 //fdata=5;//will give error, variable names are case sensitive
 //console.log(fdata);// fdata is not defined.
+
+
+// ===============--   ARITHMETIC OPERATIONS   -- ==============================
 
 //Arithmetic Operations
 var a = 7 / 3;

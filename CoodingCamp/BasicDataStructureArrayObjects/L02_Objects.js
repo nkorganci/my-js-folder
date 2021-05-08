@@ -60,3 +60,85 @@ console.log('plums' in foods&&'grapes' in foods);//true
 
 //--> Iterate Through the Keys of an Object with a for...in Statement
  //to iterate through all the keys within an object. specific syntax called a for...in statement.
+
+ //--> Iterate Through the Keys of an Object with a for...in Statement
+//Sometimes you may need to iterate through all the keys within an object.
+// for... in --> property names
+// for ... of --> property values
+let person ={ fname:"Adam", lname: "Hawwa"};
+let arr = [3,5,7];
+arr.foo="Hello";
+
+let text="";
+for (let x in person){
+    text+=person[x];
+    console.log(x);
+};
+console.log(text);
+
+for(let i in arr){
+    console.log(i);//0,1, 2, foo
+};
+
+for( let i of arr){
+    console.log(i);//3, 5, 7
+}
+
+//--> Generate an Array of All Object Keys with Object.keys()
+// generate an array which contains all the keys stored in an object using the Object.keys()
+//there will be no specific order to the entries in the array.
+
+let users = {
+  Alan: {
+    age: 27,
+    online: false
+  },
+  Jeff: {
+    age: 32,
+    online: true
+  },
+  Sarah: {
+    age: 48,
+    online: false
+  },
+  Ryan: {
+    age: 19,
+    online: true
+  }
+};
+
+function getArrayOfUsers(obj) {
+return Object.keys(obj);
+}
+
+console.log(getArrayOfUsers(users));//["Alan", "Jeff", "Sarah", "Ryan"]
+
+//--> EXAMPLE: Modify an Array Stored in an Object
+//The user object contains three keys. The data key contains five keys, one of which contains an array of friends. From this, you can see how flexible objects are as data structures. We've started writing a function addFriend. Finish writing it so that it takes a user object and adds the name of the friend argument to the array stored in user.data.friends and returns that array.
+
+let user = {
+  name: 'Kenneth',
+  age: 28,
+  data: {
+    username: 'kennethCodesAllDay',
+    joinDate: 'March 26, 2016',
+    organization: 'freeCodeCamp',
+    friends: [
+      'Sam',
+      'Kira',
+      'Tomo'
+    ],
+    location: {
+      city: 'San Francisco',
+      state: 'CA',
+      country: 'USA'
+    }
+  }
+};
+
+function addFriend(userObj, friend) {
+userObj.data.friends.push(friend);
+return userObj.data.friends;
+}
+
+console.log(addFriend(user, 'Pete'));

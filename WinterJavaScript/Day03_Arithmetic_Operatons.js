@@ -7,6 +7,7 @@ x-- ---> POST DECREMENT
 ++x ---> PRE INCREMENT
 --y ---> PRE DECREMENT
 */
+
 console.clear();
 var x=12;
 var y=3;
@@ -15,6 +16,7 @@ console.log(x-y);//6
 console.log(x*y);//27
 console.log(x/y);//3
 console.log(x%y);//0 
+
 // Increment Decrement
 console.log(x++);//12
 console.log(x);//13
@@ -34,17 +36,19 @@ x*=3;//x=3*x;
 console.log(x);//51
 y/=3;
 console.log(y);//-0.66
+
 //Exponent
 console.log(x**2);//SAME AS x*x  2601
 
 //Arithmetic Operators-Rounding
 var a=2.3664;
-console.log(Math.ceil(a))//Rounds up
-console.log(Math.floor(a))//Rounds down
-console.log(Math.round(a))//Rounds to closest one
+console.log(Math.ceil(a)) //3,Rounds up
+console.log(Math.floor(a))//2,Rounds down
+console.log(Math.round(a))//2,Rounds to closest one
 
+//(method) Number.toFixed(fractionDigits?: number): string
+//Number of digits after the decimal point. Must be in the range 0 - 20, inclusive.
 
-var roundedNumber = Math.round(a)
 var fixedNumber=a.toFixed(2);//How many digits should be after coma
 console.log(fixedNumber);
 

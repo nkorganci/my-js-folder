@@ -11,15 +11,17 @@ var
 let
 const
 */
+
 console.clear();
-// 1. var
+//--> 1. var
 var num= 5;
 console.log(num);//5
 var num= 10;
 console.log(num);//10
 num="TechPro";
 console.log(num);//"TechPro"
-//2.let
+
+//--> 2.let
 let num1=50;
 console.log(num1);
 // let num1=55;//"SyntaxError: Identifier 'num1' has already been declared
@@ -28,7 +30,8 @@ num1=true;
 console.log(num1);
 let num2=60;
 console.log(num2)
-//3. const
+
+//--> 3. const
 const num3=3.14
 console.log(num3)
 num3=4;//Assignment to constant variable.

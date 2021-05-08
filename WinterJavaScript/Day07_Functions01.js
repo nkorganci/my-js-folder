@@ -1,3 +1,30 @@
+
+//--> Functions: 
+//A function is a set of statement that perform a task or calculate a value
+
+function greet(){//DECLARING THE FUNCTION
+
+    //BODY OF THE FUNCTION
+    
+    console.log("Hello World");
+        
+    }
+    
+    greet();//Calling the function
+    
+    
+    //--> Parameters and Arguments
+    //Functions can have input
+    
+    function greetPeople(name){//name is a PARAMETER(input) which can not be accessible outside of this function
+    console.log("hello " + name);
+    console.log(`Hi ${name}`);
+        
+    }
+    
+    greetPeople("Sam");//--> Sam is an ARGUMENT( value of parameter)
+    greetPeople("adam");
+
 //Functions
 function sum(){
     var num1=4;
@@ -6,6 +33,7 @@ function sum(){
     return total;
 }
 console.log(sum());//9
+
 //Put that container to another var
 const result=sum();
 console.log(sum());
@@ -44,3 +72,27 @@ function addNums(num1=3,num2=4,num3=5){//not common but we can
 console.log(addNums(2,3));//10
 //If you dont use any parameter, it will use default ones, 3,4,5
 console.log(addNums());//7, 12
+
+//Functions can be used before or after decleration
+add(1,2);
+function add(a, b){
+    console.log(a+b);
+}
+add(1,2);
+
+//We can declare function without a name which is called anonomies
+var diff=function (x,y){
+    var d=x-y;
+    console.log(d);
+}
+
+diff(3,4);//-1
+
+//Create a anonomies function with 3 parameter and put it in a variable, 
+//arguments 3,4,5
+
+var addition=function(a,b,c){
+    return a+b+c;
+}
+
+console.log(addition(3,4,5));//12

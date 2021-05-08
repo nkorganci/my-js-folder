@@ -1,10 +1,10 @@
-/*
-Comparisons
+/* =====================COMPARISONS=========================
 NOTE: 
  === and !== check values and data types
  NOTE: 
 JS converts string values to number value when we compare them
 */
+
 console.clear();
 const x=1;
 console.log(typeof(x));//number
@@ -18,6 +18,9 @@ console.log(x>=1);//true
 console.log(y>=1);//true
  
 
+
+
+//=============================TERNARY==========================
 /* 
 (expression) ? x(if expression is true print this) : y(if expression is false print this)
 */
@@ -31,10 +34,7 @@ console.log(isExpensive1);
 
 
 //--> Random Number Generator in JS
-
 //Math.random(); Generates a num between 0 and 1.  (0-0.999999..)
-
-
 var num=Math.random();
 console.log(num);
 

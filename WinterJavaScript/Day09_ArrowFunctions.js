@@ -10,6 +10,7 @@ function sum(a){
     return a+100;
   }
   console.log(sumResult(10));//110
+
   //ARROW FUNCTION CASE 1
   //. 1. MUST. Remove function keyword and use => symbol between input and body
   var arrow=(a)=>{
@@ -22,6 +23,9 @@ function sum(a){
   // 3. OPTIONAL We can remove paranthesis around the parameter IF THERE IS SINGLE PARAMETER
   var arrow= a => a+100;
   console.log(arrow(13));//113
+
+
+
   //ARROW FUNCTION CASE 2
   //Traditional function with 2 parameter
   function sum1(a,b){
@@ -41,6 +45,9 @@ function sum(a){
   // 2. OPTIONAL We can delete curly braces and return keyword
   var        arrow1=(a,b) => a+b+100;
   console.log(arrow1(6,7));//113
+
+
+  
   //ARROW FUNCTION CASE 3
   //Traditional function with no parameter
   var x=10,y=20;
