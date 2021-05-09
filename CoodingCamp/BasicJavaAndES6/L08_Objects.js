@@ -1,8 +1,8 @@
 //--> Build JavaScript Objects
 
 
-//Objects are similar to arrays, you access the data in objects through properties.
-//if  object has any non-string properties, it will automatically typecast them as strings.
+// Objects are similar to arrays, you access the data in objects through properties.
+// if  object has any non-string properties, it will automatically typecast them as strings.
 // Accessing Object Properties with Dot Notation  (.) and bracket notation ([])
 
 var cat={

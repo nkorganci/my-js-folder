@@ -105,8 +105,8 @@ for (let J = 0; J < 3; J++) {
   }
 }
 console.log(printNumTwo1());//2
-//console.log(J);//J is not defined error
 
+//console.log(J);//J is not defined error
 
 //--> Declare a Read-Only Variable with the const Keyword
 //const has all the awesome features that let has, with the added bonus that variables declared using const are read-only/constant, can not be reassigned
