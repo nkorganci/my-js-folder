@@ -5,6 +5,7 @@ function reverseString(str){
     let newArr= arr.join("")
    
     return newArr;
+    //hi
 }
 
 reverseString("hello");
